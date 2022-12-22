@@ -63,7 +63,9 @@
                 <h1 class="text-5xl font-bold mt-0 mb-6">Food Made Simple</h1>
                 <h3 class="text-3xl font-bold mb-8">Taking the decision making out of your night out</h3>
                 <button type="button"
-                  class="inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                  class="inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs 
+                  leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 
+                  transition duration-150 ease-in-out"
                   data-mdb-ripple="true" data-mdb-ripple-color="light">
                   Get started
                 </button>
@@ -77,15 +79,32 @@
         <div class="Questionnare">
             <h1>In a Rush?</h1>
             <div class="flex space-x-2 justify-center">
-                <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Yes</button>
+                <!-- initial question -->
+                <button id ="YesBttn" type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium 
+                text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg 
+                focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg 
+                transition duration-150 ease-in-out">Yes</button>
               </div>
               <div class="flex space-x-2 mt-2 justify-center">
-                <button type="button" class="inline-block px-7 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">No</button>
+                <button id= "NoBttn" type="button" class="inline-block px-7 py-2.5 bg-blue-600 text-white font-medium text-xs 
+                leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 
+                focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg 
+                transition duration-150 ease-in-out">No</button>
               </div>
-            <div class="collapse">
+              <!-- follow up question if previous is yes-->
+            <div class="collapse"> 
                 <h1>Looking for something fancy?</h1>
-                <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Yes</button>
-                <button type="button" class="inline-block px-7 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">No</button>
+                <button id="2ndYesBttn" type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs 
+                leading-tight uppercase rounded shadow-md hover:
+                bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 
+                active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                >Yes</button>
+                <button id="2ndNoBttn" type="button" class="inline-block px-7 py-2.5 bg-blue-600 
+                text-white font-medium text-xs 
+                leading-tight uppercase rounded shadow-md hover:bg-blue-700 
+                hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none 
+                focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                >No</button>
             </div>  
             <div class="collapse">
                 <h1>Choose your choice of cuisine</h1>
@@ -93,6 +112,6 @@
             </div>
     </section>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
