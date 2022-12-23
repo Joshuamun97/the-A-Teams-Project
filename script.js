@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // var showQuestions = document.getElementById()
 
 // var startBttn = document.getElementbyID('#Start')
@@ -63,3 +64,27 @@ function Fancy (){};
 //  NOTE ! WE SHOULD SEE HOW WE CAN USE GEO-LOCATION TO BE ABLE TO FIND NEARBY RESTAURANTS. 
 // OR WE ASK USER TO PUT IN THERE LOCATION  
 
+=======
+//var showQuestions = document.getElementById()
+var startBttn = document.getElementById('#Start')
+var gettingStarted = document.querySelector ('.startingHere')
+var bringOnTheQuestions = document.querySelector ('#hidden')
+document.getElementById('Start').addEventListener('click', startHere);
+
+
+function startHere() {
+    if (startBttn == startBttn){
+        gettingStarted.classList.toggle('collapse');
+        console.log('You Guessed it!');
+    }
+        console.log("test")
+        openQuestions();
+}
+
+function openQuestions() {
+    bringOnTheQuestions.classList.toggle('collapse')
+}
+
+
+
+>>>>>>> main
