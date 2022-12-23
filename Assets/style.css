@@ -1,3 +1,32 @@
 hiddenOne {
     display: none;
 }
+.site-footer
+{
+  padding:75px 20px;
+  font-size:15px;
+  line-height:24px;
+  color:white;
+  text-align: center;
+}
+.site-footer h6
+{
+  color:white;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+  font-weight: bolder;
+}
+
+.footer-links a:hover
+{
+  color:black;
+  font-weight: bolder;
+}
+
+
+
+
+
+
