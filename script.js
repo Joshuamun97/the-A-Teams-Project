@@ -19,7 +19,7 @@ document.getElementById('Start').addEventListener('click', startHere);
 
 function startHere() {
     if (startBttn == startBttn){
-        gettingStarted.classList.toggle('collapse');
+        gettingStarted.classList.toggle('hidden');
         console.log('You Guessed it!');
     }
         console.log("test")
