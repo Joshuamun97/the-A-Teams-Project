@@ -48,3 +48,6 @@ document.querySelector('#btn1').addEventListener('click', setNextQuestion);
 document.querySelector('#btn2').addEventListener('click', setNextQuestion);
 
 
+function gatherQuestions() {
+    
+}
