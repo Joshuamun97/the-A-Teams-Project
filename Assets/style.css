@@ -18,7 +18,7 @@ hiddenOne {
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
-  letter-spacing:2px
+  letter-spacing:2px;
   font-weight:bolder;
   text-align:center;
   
@@ -28,6 +28,11 @@ hiddenOne {
 {
   color:black;
   font-weight: bolder;
+}
+
+.email
+{
+    padding-bottom: 2%;
 }
 
 
