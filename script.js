@@ -13,7 +13,7 @@ var questionArray = [
     }
 ]
 var arrindex = 0
-var titleDiv = document.getElementById('question');
+var titleDiv = document.querySelector('.question');
 document.getElementById('Start').addEventListener('click', startHere);
 
 
@@ -21,16 +21,15 @@ function startHere() {
     if (startBttn == startBttn){
         gettingStarted.classList.toggle('hidden');
         console.log('You Guessed it!');
+        bringOnTheQuestions.classList.toggle('collapse');
     }
         console.log("test")
         openQuestions();
 }
 
 function openQuestions() {
-    bringOnTheQuestions.classList.toggle('collapse');
     if (questionArray[arrindex] !== undefined) {
         console.log('yurp')
-        var titleDiv = document.querySelector('.question');
         titleDiv.textContent = questionArray[arrindex].title;
         var ans = document.querySelectorAll('.btn');
         ans.forEach(function (element, index) {
@@ -66,3 +65,17 @@ fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/47910
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err));
+
+function setNextQuestion() {
+    arrindex++;
+    titleDiv.textContent = questionArray[arrindex].title;
+}
+console.log(questionArray[arrindex])
+
+document.querySelector('#btn1').addEventListener('click', setNextQuestion);
+document.querySelector('#btn2').addEventListener('click', setNextQuestion);
+
+
+function gatherQuestions() {
+    
+}
