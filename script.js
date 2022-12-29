@@ -1,4 +1,4 @@
-//var showQuestions = document.getElementById()
+
 var startBttn = document.getElementById('#Start')
 var gettingStarted = document.querySelector ('.startingHere')
 var bringOnTheQuestions = document.querySelector ('#hidden')
@@ -76,6 +76,15 @@ document.querySelector('#btn1').addEventListener('click', setNextQuestion);
 document.querySelector('#btn2').addEventListener('click', setNextQuestion);
 
 
+
+function getUserCriteria() {
+
+}
+
+function generateResults() {
+
+}
+
 function gatherQuestions() {
     
 }
@@ -108,4 +117,5 @@ fetch('https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err));
+
 
