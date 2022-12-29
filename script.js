@@ -1,4 +1,4 @@
-//var showQuestions = document.getElementById()
+
 var startBttn = document.getElementById('#Start')
 var gettingStarted = document.querySelector ('.startingHere')
 var bringOnTheQuestions = document.querySelector ('#hidden')
@@ -48,6 +48,10 @@ document.querySelector('#btn1').addEventListener('click', setNextQuestion);
 document.querySelector('#btn2').addEventListener('click', setNextQuestion);
 
 
-function gatherQuestions() {
-    
+function getUserCriteria() {
+
+}
+
+function generateResults() {
+
 }
