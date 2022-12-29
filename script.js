@@ -4,11 +4,11 @@ var gettingStarted = document.querySelector ('.startingHere')
 var bringOnTheQuestions = document.querySelector ('#hidden')
 var questionArray = [
     {
-        title: 'In a Rush?',
+        title: 'Any Food Allergies?',
         answers: ['Yes', 'No']
     },
     {
-        title: 'Looking For Something Fancy?',
+        title: 'Have A Specific Movie Genre In Mind?',
         answers: ['Yes', 'No']
     }
 ]
