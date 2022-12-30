@@ -47,25 +47,6 @@ const recipeOptions = {
 	}
 };
 
-fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/479101/information', recipeOptions)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-
-    //  utelly api. 
-    const movieOptions = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': 'da507b3d2amsh4153460d232f196p18925bjsn195d14c68c13',
-            'X-RapidAPI-Host': 'utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com'
-        }
-    };
-    
-    fetch('https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/lookup?term=borat&country=us', movieOptions)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
-
 function setNextQuestion() {
     arrindex++;
     titleDiv.textContent = questionArray[arrindex].title;
