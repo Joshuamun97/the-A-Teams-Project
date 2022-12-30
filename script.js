@@ -70,14 +70,15 @@ function setNextQuestion() {
     arrindex++;
     titleDiv.textContent = questionArray[arrindex].title;
 }
-console.log(questionArray[arrindex])
+
 
 document.querySelector('#btn1').addEventListener('click', setNextQuestion);
 document.querySelector('#btn2').addEventListener('click', setNextQuestion);
 
-
-
 function getUserCriteria() {
+    var ans = ;
+    var userChoseAllergies = ;
+    var userChoseGenre = ;
 
 }
 
