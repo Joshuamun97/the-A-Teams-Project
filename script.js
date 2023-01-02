@@ -15,13 +15,14 @@ var questionArray = [
 var arrindex = 0
 var titleDiv = document.querySelector('.question');
 document.getElementById('Start').addEventListener('click', startHere);
+var userChoseYes = document.getElementById('btn1')
 
 //Removes get started button
 function startHere() {
     if (startBttn == startBttn){
         gettingStarted.classList.toggle('hidden');
         console.log('You Guessed it!');
-        bringOnTheQuestions.classList.toggle('collapse');
+        bringOnTheQuestions.classList.toggle('hidden');
     }
         console.log("test")
         openQuestions();
@@ -37,20 +38,25 @@ function openQuestions() {
         })
     }
 }
-
-
 function setNextQuestion() {
     arrindex++;
     titleDiv.textContent = questionArray[arrindex].title;
+    //possibly create if statement here to state that if user chose yes to the questions then bring up dropdown menu
 }
 
+function toggleCriteriaOptions () {
+    var Menu = document.getElementById('dropDownMenu')
+    Menu.classList.toggle('hidden');
+    bringOnTheQuestions.classList.toggle('hidden');
 
-document.querySelector('#btn1').addEventListener('click', setNextQuestion);
+}
+//need to create event listeners for yes to toggle drop down menu
+document.querySelector('#btn1').addEventListener('click', toggleCriteriaOptions);
 document.querySelector('#btn2').addEventListener('click', setNextQuestion);
 
 function getUserCriteria() {
     var ans 
-    var userChoseAllergies 
+    var userChoseFoodtype 
     var userChoseGenre  
 
 }
