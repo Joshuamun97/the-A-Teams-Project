@@ -4,11 +4,11 @@ var gettingStarted = document.querySelector ('.startingHere')
 var bringOnTheQuestions = document.querySelector ('#hidden')
 var questionArray = [
     {
-        title: 'Have a specific Meal Type in Mind?',
+        title: 'Please Enter a meal',
         answers: ['Yes', 'No']
     },
     {
-        title: 'Have A Specific Movie Genre In Mind?',
+        title: 'Please enter a movie or show',
         answers: ['Yes', 'No']
     }
 ]
@@ -32,27 +32,20 @@ function openQuestions() {
     if (questionArray[arrindex] !== undefined) {
         console.log('yurp')
         titleDiv.textContent = questionArray[arrindex].title;
-        var ans = document.querySelectorAll('.btn');
-        ans.forEach(function (element, index) {
-            element.textContent = question[arrindex].answers[index]
-        })
+        // var ans = document.querySelectorAll('.btn');
+        // ans.forEach(function (element, index) {
+        //     element.textContent = question[arrindex].answers[index]
+        //})
     }
 }
 function setNextQuestion() {
     arrindex++;
     titleDiv.textContent = questionArray[arrindex].title;
-    //possibly create if statement here to state that if user chose yes to the questions then bring up dropdown menu
 }
 
-function toggleCriteriaOptions () {
-    var Menu = document.getElementById('dropDownMenu')
-    Menu.classList.toggle('hidden');
-    bringOnTheQuestions.classList.toggle('hidden');
 
-}
-//need to create event listeners for yes to toggle drop down menu
-document.querySelector('#btn1').addEventListener('click', toggleCriteriaOptions);
-document.querySelector('#btn2').addEventListener('click', setNextQuestion);
+//document.querySelector('#btn1').addEventListener('click', toggleCriteriaOptions);
+document.querySelector('#mealBtn').addEventListener('click', setNextQuestion);
 
 function getUserCriteria() {
     var ans 
