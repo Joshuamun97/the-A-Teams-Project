@@ -37,49 +37,70 @@ height: 350px">
     data-mdb-ripple="true" data-mdb-ripple-color="light">
     Get started
   </button>
+  <section id="results" class="mx-auto flex flex-wrap justify-center hidden" style="color:white">
+    <div class="columns-1">
+      <img id="recipeImage" class="object-fill h-48 w-96 "></img>
+      <span id="recipeTitle"></span>
+      <img id="movieImage" class="object-fill h-48 w-96 "></img>
+      <span><a id="movieURL">Amazon Prime</a></span>
+
+      <button type="button" id="resetFormBtn"
+        class="startingHere mx-auto flex flex-wrap justify-center inline-block px-6 py-2.5 border-2 border-gray-300 text-gray-300 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+        data-mdb-ripple="true" data-mdb-ripple-color="light">
+        Reset
+      </button>
+
+    </div>
+
+  </section>
   <section id="hidden" class="hidden mx-auto flex flex-wrap justify-center">
     <div class="Questionnare">
       <h1 class="question text-3xl font-bold mb-8 text-gray-300"></h1>
       <div id="questionOne">
         <form class="w-full max-w-sm">
           <div class="flex items-center border-b border-teal-500 py-2">
-            <input class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Tacos" aria-label="Full name">
-            <button id="mealBtn" class="flex-shrink-0 hover:bg-gray-500 border-gray-300 hover:bg-black hover:bg-opacity-5 text-sm border-2 text-white py-1 px-2 rounded" type="button">
+            <input id="answer"
+              class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+              type="text" placeholder="Text" aria-label="Full name">
+            <button id="mealBtn"
+              class="flex-shrink-0 hover:bg-gray-500 border-gray-300 hover:bg-black hover:bg-opacity-5 text-sm border-2 text-white py-1 px-2 rounded"
+              type="button">
               Let's Get This Night Started!
             </button>
           </div>
         </form>
   </section>
-        <footer class="site-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <h6>About</h6>
-                <p class="text-justify">Looking for a date night, Girls's Night Out, or just for fun, A Night Made
-                  Simple is here to make the choice of dinner easy. Choose from a simple fast food restaruant to a full
-                  5 course meal based on your desires.</p>
-              </div>
 
-              <div class="col-xs-6 col-md-3">
-                <h6>Quick Links</h6>
-                <ul class="footer-links">
-                  <li><a href="aboutus.html">About Us</a></li>
-                  <li><a href="https://github.com/Joshuamun97/the-A-Teams-Project">GitHub</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
-                  <a href="#">The-A-Team</a>.
-                </p>
-              </div>
-            </div>
-          </div>
-        </footer>
-    <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Looking for a date night, Girls's Night Out, or just for fun, A Night Made
+            Simple is here to make the choice of dinner easy. Choose from a simple fast food restaruant to a full
+            5 course meal based on your desires.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="https://github.com/Joshuamun97/the-A-Teams-Project">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+            <a href="#">The-A-Team</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
