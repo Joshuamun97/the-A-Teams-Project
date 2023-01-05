@@ -1,6 +1,25 @@
 # Project 1: 
 *Server-Side APIs*
 
+
+## User Story
+
+```
+AS A User
+I WANT to view movies and food
+SO THAT I can enjoy an evening
+```
+
+## Acceptance Criteria
+
+```
+GIVEN a prompt when I hit the get started button
+WHEN I type a meal
+THEN I am presented with meal options
+WHEN I type a show or movie title
+THEN I am given options on the showing
+```
+
 ## Project Requirements
 
 ```
