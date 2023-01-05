@@ -63,9 +63,10 @@ Links to the deployed application and the GitHub repository.
 ```
 
 ## Mock-Up
-The following image shows an example of a similar web application's appearance and functionality:
 
-// Add Image // 
+The following image shows an example of a similar web application's appearance and functionality:
+![Night-made-in](https://user-images.githubusercontent.com/116986004/210679678-26fa7cba-affe-4cde-9671-d015daf5bab4.png)
+
 
 ## Grading Requirements
 
